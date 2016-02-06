@@ -1,0 +1,30 @@
+{
+  "name": "jspm-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm install && jspm install"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.13.4",
+    "jspm": "^0.16.26"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "client"
+    },
+    "dependencies": {
+      "angular": "github:angular/bower-angular@^1.4.9",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.17",
+      "css": "github:systemjs/plugin-css@^0.1.20"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}

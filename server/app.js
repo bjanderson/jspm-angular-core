@@ -5,4 +5,4 @@ var express = require('express'),
 server.use(express.static(__dirname + '/../client'));
 server.listen(port);
 
-console.log('Server listening at localhost:' + port +'/');
+//console.log('Server listening at localhost:' + port +'/');

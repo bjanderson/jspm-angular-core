@@ -9,8 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.11.1",
     "express": "^4.13.4",
-    "jspm": "^0.16.26"
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.0.6",
+    "jspm": "^0.16.26",
+    "wrench": "^1.5.8"
   },
   "jspm": {
     "directories": {

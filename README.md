@@ -19,3 +19,4 @@ And finally to begin working on the code in that branch, create a new branch for
 
 Here are the branches and their corresponding YouTube videos:
 * setup: [JSPM Angular Project Setup](https://www.youtube.com/watch?v=c7omV80IPwg)
+* setup: [Setup Gulp with Browsersync and Nodemon](https://www.youtube.com/watch?v=_BNo2VCr2k8)

@@ -8,13 +8,10 @@ import MainCtrl from './main.controller';
 import Home from '/modules/home/home.module';
 
 const main = angular
-  .module(
-    'Main',
-    [
-      Home.name,
-      'ui.router'
-    ]
-  )
+  .module('Main', [
+    Home.name,
+    'ui.router'
+  ])
 
   .config(MainConfig)
 

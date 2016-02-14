@@ -30,7 +30,9 @@ gulp.task('browser-sync',
 );
 
 gulp.task('nodemon',
-  [],
+  [
+    'eslint'
+  ],
   function (done) {
     var running = false;
 

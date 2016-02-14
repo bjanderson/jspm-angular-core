@@ -9,9 +9,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^4.1.8",
     "browser-sync": "^2.11.1",
     "express": "^4.13.4",
     "gulp": "^3.9.1",
+    "gulp-eslint": "^2.0.0",
     "gulp-nodemon": "^2.0.6",
     "jspm": "^0.16.26",
     "wrench": "^1.5.8"

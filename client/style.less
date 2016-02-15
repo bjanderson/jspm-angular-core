@@ -1,0 +1,22 @@
+#myapp {
+  /*
+    JSPM/SystemJS does not guarantee load order, so there is a good chance that
+    you will not be able to override 3rd party styles when you expect to.
+
+    The workaround is to wrap all styles in this selector to make them more
+    specific than 3rd party css selectors.
+
+    Note that the <html> tag in index.html is given the id="myapp" so that this
+    selector pertains to everything in the html document.
+  */
+
+
+  /* Put default styles here. */
+  body {
+    background: #ccc;
+  }
+
+  /* Inject other styles here so that they can override any default styles */
+  /* inject:less-imports */
+  /* endinject */
+}

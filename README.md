@@ -22,3 +22,4 @@ Here are the branches and their corresponding YouTube videos:
 * gulp-setup: [Setup Gulp with Browsersync and Nodemon](https://www.youtube.com/watch?v=_BNo2VCr2k8)
 * eslint-setup: [Configure Gulp with ESLint](https://www.youtube.com/watch?v=_QzVB382JwQ)
 * less-setup: [Configure Gulp with LESS](https://www.youtube.com/watch?v=bTj7jNt35kk)
+* ngtemplate-setup: [Configure Gulp with NGTemplate](https://www.youtube.com/watch?v=gh8AkXcmfO8)

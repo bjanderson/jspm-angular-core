@@ -6,7 +6,9 @@ export default function HomeConfig($stateProvider) {
         '': {
           controller: 'HomeCtrl',
           controllerAs: 'home',
-          templateUrl: 'modules/home/home.tpl.html'
+          templateProvider: function ($templateCache) {
+            return $templateCache.get('modules/home/home.tpl.html');
+          }
         }
       },
 

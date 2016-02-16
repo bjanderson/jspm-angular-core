@@ -13,7 +13,7 @@ gulp.task('serve',
     gulp.watch('client/**/*.js').on('change', reload);
     gulp.watch('client/style.css').on('change', reload);
     gulp.watch('client/**/*.less', ['less']);
-    gulp.watch('**/*.tpl.html').on('change', reload);
+    gulp.watch('**/*.tpl.html', ['ngtemplate']);
   }
 );
 
@@ -33,7 +33,8 @@ gulp.task('browser-sync',
 gulp.task('nodemon',
   [
     'eslint',
-    'less'
+    'less',
+    'ngtemplate'
   ],
   function (done) {
     var running = false;

@@ -8,6 +8,7 @@ gulp.task('eslint', function () {
     '**/*.js',
     '!client/config.js',
     '!client/jspm_packages{,/**}',
+    '!client/modules/html_templates/html_templates.module.js',
     '!node_modules{,/**}'
   ])
   .pipe(eslint())

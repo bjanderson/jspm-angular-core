@@ -16,7 +16,7 @@ gulp.task('ngtemplate', function() {
     .pipe(ngTemplate({
       moduleName: 'HTMLTemplates',
       standalone: true,
-      filePath: 'app/modules/html_templates/html_templates.module.js'
+      filePath: 'modules/html_templates/html_templates.module.js'
     }))
     .pipe(gulp.dest('client'));
 });

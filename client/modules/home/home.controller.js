@@ -34,7 +34,7 @@ export default class HomeCtrl {
   }
 
   add(val1, val2) {
-    return val1 - val2;
+    return val1 + val2;
   }
 
   divide(val1, val2) {

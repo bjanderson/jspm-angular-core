@@ -7,6 +7,8 @@ module.exports = function(config) {
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: true,
 
+    // karma-babel-preprocessor settings
+    // tell it to use babel-preset-es2015
     babelPreprocessor: {
       options: {
         presets: ['es2015'],
@@ -31,6 +33,7 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity,
 
+    // Settings for the karma-coverage reporter
     coverageReporter: {
       type : 'html',
       dir : 'coverage/'
@@ -78,10 +81,11 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'client/app/**/*.js': ['babel'],
-      'client/app/**/!(*.unit-test).js': ['coverage']
+      'client/{*.js,!jspm_packages{,/**}}': ['babel'],
+      'client/modules/**/!(*.unit-test).js': ['babel', 'coverage']
     },
 
+    // set up proxies so the test server will be able to find our files
     proxies: {
       '/client/': '/base/client/',
       '/jspm_packages/': '/base/client/jspm_packages/'
@@ -99,6 +103,7 @@ module.exports = function(config) {
     // if true, Karma captures browsers, runs the tests and exits
     singleRun: true,
 
+    // set up the spec reporter - I just want to see the "expected x to equal y" output in errors
     specReporter: {
       maxLogLines: 1,
       suppressErrorSummary: true,

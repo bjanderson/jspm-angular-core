@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && jspm install"
+    "start": "npm install && jspm install",
+    "install-globals": "npm install -g gulp eslint-cli karma-cli",
+    "test": "karma start"
   },
   "author": "",
   "license": "ISC",

@@ -5,14 +5,12 @@ import 'angular-ui-router';
 import 'style.css!';
 import '/app/modules/html_templates/html_templates.module';
 
-import Calculator from '/app/modules/calculator/calculator.module';
 import Home from '/app/modules/home/home.module';
 import MainConfig from './main.config';
 import MainCtrl from './main.controller';
 
 const main = angular
   .module('Main', [
-    Calculator.name,
     Home.name,
     'HTMLTemplates',
     'ui.router'

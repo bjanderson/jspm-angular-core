@@ -1,10 +1,10 @@
-import HomeCtrl from './home.controller';
+import CalculatorCtrl from './calculator.controller';
 
-describe('Home Controller Test', function() {
+describe('Calculator Controller Test', function() {
   let ctrl;
 
   beforeEach(function () {
-    ctrl = new HomeCtrl();
+    ctrl = new CalculatorCtrl();
   });
 
   it('2 + 2 = 4', function () {

@@ -59,11 +59,12 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     plugins: [
-     'karma-jasmine',
-     'karma-jspm',
-     'karma-chrome-launcher',
-     'karma-phantomjs-launcher',
-     'karma-babel-preprocessor'
+      'karma-babel-preprocessor',
+      'karma-chrome-launcher',
+      'karma-jasmine',
+      'karma-jspm',
+      'karma-phantomjs-launcher',
+      'karma-spec-reporter'
     ],
 
     // web server port
@@ -83,7 +84,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['spec'],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

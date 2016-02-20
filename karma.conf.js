@@ -31,6 +31,10 @@ module.exports = function(config) {
     // how many browser should be started simultaneous
     concurrency: Infinity,
 
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
 
     // list of files to exclude
     exclude: [],
@@ -61,6 +65,7 @@ module.exports = function(config) {
     plugins: [
       'karma-babel-preprocessor',
       'karma-chrome-launcher',
+      'karma-coverage',
       'karma-jasmine',
       'karma-jspm',
       'karma-phantomjs-launcher',
@@ -73,7 +78,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'client/{*.js,!jspm_packages{,/**}}': ['babel']
+      'client/app/**/*.js': ['babel'],
+      'client/app/**/!(*.unit-test).js': ['coverage']
     },
 
     proxies: {
@@ -84,7 +90,10 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['spec'],
+    reporters: [
+      'coverage',
+      'spec'
+    ],
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits

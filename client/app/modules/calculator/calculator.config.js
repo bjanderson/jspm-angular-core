@@ -7,7 +7,7 @@ export default function CalculatorConfig($stateProvider) {
           controller: 'CalculatorCtrl',
           controllerAs: 'calculator',
           templateProvider: function ($templateCache) {
-            return $templateCache.get('modules/calculator/calculator.tpl.html');
+            return $templateCache.get('app/modules/calculator/calculator.tpl.html');
           }
         }
       },

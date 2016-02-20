@@ -3,10 +3,10 @@ import angular from 'angular';
 import 'angular-ui-router';
 
 import 'style.css!';
-import '/modules/html_templates/html_templates.module';
+import '/app/modules/html_templates/html_templates.module';
 
-import Calculator from '/modules/calculator/calculator.module';
-import Home from '/modules/home/home.module';
+import Calculator from '/app/modules/calculator/calculator.module';
+import Home from '/app/modules/home/home.module';
 import MainConfig from './main.config';
 import MainCtrl from './main.controller';
 

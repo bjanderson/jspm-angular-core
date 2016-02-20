@@ -14,14 +14,18 @@ System.config({
   },
 
   map: {
-    "angular": "github:angular/bower-angular@1.4.9",
+    "angular": "github:angular/bower-angular@1.5.0",
+    "angular-mocks": "github:angular/bower-angular-mocks@1.5.0",
     "angular-ui-router": "github:angular-ui/ui-router@0.2.17",
     "babel": "npm:babel-core@5.8.35",
     "babel-runtime": "npm:babel-runtime@5.8.35",
     "core-js": "npm:core-js@1.2.6",
     "css": "github:systemjs/plugin-css@0.1.20",
     "github:angular-ui/ui-router@0.2.17": {
-      "angular": "github:angular/bower-angular@1.4.9"
+      "angular": "github:angular/bower-angular@1.5.0"
+    },
+    "github:angular/bower-angular-mocks@1.5.0": {
+      "angular": "github:angular/bower-angular@1.5.0"
     },
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"

@@ -34,7 +34,8 @@ gulp.task('nodemon',
   [
     'eslint',
     'less',
-    'ngtemplate'
+    'ngtemplate',
+    'karma'
   ],
   function (done) {
     var running = false;

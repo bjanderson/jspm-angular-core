@@ -23,3 +23,4 @@ Here are the branches and their corresponding YouTube videos:
 * eslint-setup: [Configure Gulp with ESLint](https://www.youtube.com/watch?v=_QzVB382JwQ)
 * less-setup: [Configure Gulp with LESS](https://www.youtube.com/watch?v=bTj7jNt35kk)
 * ngtemplate-setup: [Configure Gulp with NGTemplate](https://www.youtube.com/watch?v=gh8AkXcmfO8)
+* karma-setup: [Set up unit testing with AngularJS, ES6, JSPM and Karma](https://www.youtube.com/watch?v=3D7o9BQHY7Q)

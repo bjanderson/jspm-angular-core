@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npm install && jspm install"
+    "start": "npm install && jspm install",
+    "test": "npm run unit-tests && npm run e2e-tests",
+    "unit-tests": "karma start",
+    "e2e-tests": "protractor protractor.conf.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,6 +25,7 @@
     "gulp-ng-template": "^0.2.2",
     "gulp-nodemon": "^2.0.6",
     "jasmine-core": "^2.4.1",
+    "jasmine-spec-reporter": "^2.4.0",
     "jspm": "^0.16.26",
     "karma": "^0.13.21",
     "karma-babel-preprocessor": "^6.0.1",

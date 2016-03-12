@@ -5,7 +5,7 @@ module.exports = function(config) {
   config.set({
 
     // enable / disable watching file and executing tests whenever any file changes
-    autoWatch: true,
+    autoWatch: false,
 
     // karma-babel-preprocessor settings
     // tell it to use babel-preset-es2015
@@ -23,7 +23,6 @@ module.exports = function(config) {
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
     browsers: [
       'PhantomJS'
-      //,'Chrome'
     ],
 
     // enable / disable colors in the output (reporters and logs)
@@ -35,8 +34,8 @@ module.exports = function(config) {
 
     // Settings for the karma-coverage reporter
     coverageReporter: {
-      type : 'html',
-      dir : 'coverage/'
+      type: 'html',
+      dir: 'coverage/'
     },
 
     // list of files to exclude
@@ -47,7 +46,10 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jspm', 'jasmine'],
+    frameworks: [
+      'jspm',
+      'jasmine'
+    ],
 
     jspm: {
       // Edit this to your needs
@@ -67,7 +69,6 @@ module.exports = function(config) {
 
     plugins: [
       'karma-babel-preprocessor',
-      'karma-chrome-launcher',
       'karma-coverage',
       'karma-jasmine',
       'karma-jspm',

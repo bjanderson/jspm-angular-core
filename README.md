@@ -25,3 +25,4 @@ Here are the branches and their corresponding YouTube videos:
 * ngtemplate-setup: [Configure Gulp with NGTemplate](https://www.youtube.com/watch?v=gh8AkXcmfO8)
 * karma-setup: [Set up unit testing with AngularJS, ES6, JSPM and Karma](https://www.youtube.com/watch?v=3D7o9BQHY7Q)
 * protractor-setup: [Set up E2E tests for AngularJS with Protractor](https://www.youtube.com/watch?v=6f3MuEgDT0E)
+* build-setup: [Bundle an AngularJS project using JSPM](https://www.youtube.com/watch?v=ZJC-nlXErOw)

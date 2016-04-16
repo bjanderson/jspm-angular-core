@@ -1,6 +1,8 @@
 export default class MainCtrl {
 
   constructor($scope) {
+    'ngInject';
+
     let siteName = 'JSPM Angular Project';
     $scope.pageTitle = siteName;
 

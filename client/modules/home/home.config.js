@@ -1,4 +1,6 @@
 export default function HomeConfig($stateProvider) {
+  'ngInject';
+
   $stateProvider
     .state('home', {
       url: '/home',

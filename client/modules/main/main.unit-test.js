@@ -1,7 +1,6 @@
 import MainCtrl from './main.controller';
 
 describe('Main Controller Test', function () {
-  let ctrl;
   let scope = {
     $on: function (eventName, callback) {
       scope.eventName = eventName;
@@ -10,7 +9,7 @@ describe('Main Controller Test', function () {
   };
 
   beforeEach(function () {
-    ctrl = new MainCtrl(scope);
+    new MainCtrl(scope);
   });
 
   describe('testing main controller scope properties and actions', function () {
